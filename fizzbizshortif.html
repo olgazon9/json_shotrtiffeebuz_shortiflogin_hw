@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+       //regular for fizzbizz
+// for (x = 0 ; x <= 100 ; x++) {
+// if  (x % 3 == 0 && x % 5 == 0) {console.log ('fizzbizz')}
+// if ( x % 3 == 0 ) {console.log ('fizz')}
+// if (x % 5 == 0 ) { console.log ('bizz')}
+// else {console.log (x) }
+// }
+
+
+  // first try short if - failed
+//  for (x = 0 ; x <= 100 ; x++) {
+//      console.log(x % 3 == 0 && x % 5 == 0 && 'fizzbizz' );
+//      console.log(x % 3 == 0 && 'fizz');
+//    console.log(x % 5 == 0 ?'bizz': x );}
+
+
+ // second try - failed
+// for (x = 0 ; x <= 100 ; x++) { console.log
+//     (x % 3 == 0 && x % 5 == 0 ? 'fizzbizz' : x 
+//     || x % 3 == 0 ? 'fizz': x
+//     || x % 5 == 0 ?'bizz': x )}
+
+function fizzbuzz(x) {
+  let fizzbuzz;
+  fizzbuzz = (x % 3 == 0 && x % 5 == 0) ? "fizzbuzz" : (x % 3 == 0) ? "fizz" : (x % 5 == 0) ? "buzz" : x;
+  return fizzbuzz;
+}
+
+for (let x = 1; x <= 100; x++) {
+  console.log(fizzbuzz(x));
+}
+
+
+
+
+
+
+
+    </script>
+
+    
+
+
+
+
+
+</body>
+</html>
